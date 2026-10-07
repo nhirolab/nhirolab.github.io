@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI用語集 初心者向け やさしい言葉で解説 | nhirolab AI実験室</title>
+    <meta name="description" content="AI、生成AI、LLM、プロンプト、ハルシネーション(知ったかぶり)など、AIの言葉を中学生にも分かる言葉で説明します。検索もできます。">
+    <link rel="stylesheet" href="../assets/style.css">
+  </head>
+  <body>
+    <header class="nav">
+      <div class="wrap">
+        <a class="logo" href="../">nhirolab <span>AI実験室</span></a>
+        <ul>
+          <li><a href="../#weekly">週刊まとめ</a></li>
+          <li><a href="./">用語集</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <div class="article">
+        <p class="meta">AI用語集</p>
+        <h1>AIの言葉を、やさしく。</h1>
+        <p class="summary">むずかしいAIの言葉を、中学生にも分かる言葉で説明します。知りたい言葉は、下の検索ボックスで探せます。</p>
+
+        <div class="search">
+          <label for="q" class="sr">用語を検索</label>
+          <input id="q" type="search" placeholder="言葉を探す(例:プロンプト)" autocomplete="off">
+          <p id="count" class="count" aria-live="polite"></p>
+        </div>
+
+        <section class="g-group">
+          <h2>基本の言葉</h2>
+          <article class="term" data-search="AI(エーアイ)/ 人工知能 人間のように「考えているように見える」コンピューターの技術です。 文章を読む、絵を描く、質問に答えるなど、人間がやる作業をまねします。本当に考えているわけではなく、たくさんのデータから学んだ「パターン」を使っています。  えーあい 人工知能 じんこうちのう">
+            <h3>AI(エーアイ)/ 人工知能</h3>
+            <p class="one">人間のように「考えているように見える」コンピューターの技術です。</p>
+            <p>文章を読む、絵を描く、質問に答えるなど、人間がやる作業をまねします。本当に考えているわけではなく、たくさんのデータから学んだ「パターン」を使っています。</p>
+          </article>
+          <article class="term" data-search="生成AI(せいせいエーアイ) 文章や絵、音楽など、新しいものを「作る」AIです。 ChatGPTやClaude、Geminiなどが代表です。「こんな絵を描いて」と頼むと、その場で作ってくれます。 何でも描いてくれる、とても物知りなイラストレーター兼ライターです。 せいせいえーあい ChatGPT Claude Gemini">
+            <h3>生成AI(せいせいエーアイ)</h3>
+            <p class="one">文章や絵、音楽など、新しいものを「作る」AIです。</p>
+            <p>ChatGPTやClaude、Geminiなどが代表です。「こんな絵を描いて」と頼むと、その場で作ってくれます。</p>
+            <p class="simply"><strong>たとえ:</strong>何でも描いてくれる、とても物知りなイラストレーター兼ライターです。</p>
+          </article>
+          <article class="term" data-search="LLM(エルエルエム)/ 大規模言語モデル 文章を読み書きするのが得意なAIの「中身」です。 とても大量の文章を読んで学んだAIです。「次に来そうな言葉」を予想する力がとても高く、会話や文章づくりができます。ChatGPTやClaudeは、このLLMを使ったサービスです。  えるえるえむ 大規模言語モデル だいきぼげんごもでる">
+            <h3>LLM(エルエルエム)/ 大規模言語モデル</h3>
+            <p class="one">文章を読み書きするのが得意なAIの「中身」です。</p>
+            <p>とても大量の文章を読んで学んだAIです。「次に来そうな言葉」を予想する力がとても高く、会話や文章づくりができます。ChatGPTやClaudeは、このLLMを使ったサービスです。</p>
+          </article>
+          <article class="term" data-search="モデル AIの「頭脳」にあたる部分です。 ニュースで「新しいモデルが出た」と言うときは、新しい頭脳ができたという意味です。GPT-6.1 SolやClaude Sonnet 5.5は、モデルの名前です。数字が大きいほど新しいことが多いです。  GPT Sol Sonnet 頭脳 ずのう">
+            <h3>モデル</h3>
+            <p class="one">AIの「頭脳」にあたる部分です。</p>
+            <p>ニュースで「新しいモデルが出た」と言うときは、新しい頭脳ができたという意味です。GPT-6.1 SolやClaude Sonnet 5.5は、モデルの名前です。数字が大きいほど新しいことが多いです。</p>
+          </article>
+        </section>
+        <section class="g-group">
+          <h2>AIに頼むときの言葉</h2>
+          <article class="term" data-search="プロンプト AIに出す「お願いの文章」です。 「夏休みの作文のアイデアを5つ出して」のように、AIに書いて伝える指示です。頼み方で答えの質が変わります。  ぷろんぷと 指示 しじ 質問">
+            <h3>プロンプト</h3>
+            <p class="one">AIに出す「お願いの文章」です。</p>
+            <p>「夏休みの作文のアイデアを5つ出して」のように、AIに書いて伝える指示です。頼み方で答えの質が変わります。</p>
+          </article>
+          <article class="term" data-search="チャットボット 文字で会話できるAIのことです。 ChatGPTやClaudeのように、チャットで話しかけると返事をしてくれます。  ちゃっとぼっと チャット 会話">
+            <h3>チャットボット</h3>
+            <p class="one">文字で会話できるAIのことです。</p>
+            <p>ChatGPTやClaudeのように、チャットで話しかけると返事をしてくれます。</p>
+          </article>
+          <article class="term" data-search="ハルシネーション AIが、知らないことを知っているふりをして、もっともらしいウソを答えてしまうことです。「知ったかぶり」とも呼ばれます。 AIは、分からないときに「分かりません」と言わず、自信ありげに答えてしまうことがあります。人名、数字、本のタイトルなどは特に間違えやすいので、大事なことは自分で確認しましょう。 テストで分からない問題に、それっぽい答えを書いてしまう感じです。 はるしねーしょん 知ったかぶり しったかぶり ウソ うそ 間違い まちがい 幻覚">
+            <h3>ハルシネーション</h3>
+            <p class="one">AIが、知らないことを知っているふりをして、もっともらしいウソを答えてしまうことです。「知ったかぶり」とも呼ばれます。</p>
+            <p>AIは、分からないときに「分かりません」と言わず、自信ありげに答えてしまうことがあります。人名、数字、本のタイトルなどは特に間違えやすいので、大事なことは自分で確認しましょう。</p>
+            <p class="simply"><strong>たとえ:</strong>テストで分からない問題に、それっぽい答えを書いてしまう感じです。</p>
+          </article>
+        </section>
+        <section class="g-group">
+          <h2>最近よく出てくる言葉</h2>
+          <article class="term" data-search="AIエージェント 頼まれた仕事を、自分で考えて進めるAIです。 ふつうのAIは「聞かれたら答える」だけです。エージェントは、調べる、アプリを使う、結果をまとめるなど、いくつもの作業を自分で続けます。第1回のOpenAIの「dots」もこの仲間です。 質問に答えるだけの先生ではなく、頼んだ宿題を最後まで手伝ってくれる助手です。 えーあいえーじぇんと dots ドッツ 助手">
+            <h3>AIエージェント</h3>
+            <p class="one">頼まれた仕事を、自分で考えて進めるAIです。</p>
+            <p>ふつうのAIは「聞かれたら答える」だけです。エージェントは、調べる、アプリを使う、結果をまとめるなど、いくつもの作業を自分で続けます。第1回のOpenAIの「dots」もこの仲間です。</p>
+            <p class="simply"><strong>たとえ:</strong>質問に答えるだけの先生ではなく、頼んだ宿題を最後まで手伝ってくれる助手です。</p>
+          </article>
+          <article class="term" data-search="マルチモーダル 文字だけでなく、画像や音声も扱えることです。 写真を見せて「これは何?」と聞いたり、声で話しかけたりできるAIのことです。  まるちもーだる 画像 音声 写真">
+            <h3>マルチモーダル</h3>
+            <p class="one">文字だけでなく、画像や音声も扱えることです。</p>
+            <p>写真を見せて「これは何?」と聞いたり、声で話しかけたりできるAIのことです。</p>
+          </article>
+          <article class="term" data-search="API(エーピーアイ) ほかのアプリがAIを使うための「入り口」です。 会社やアプリの作り手が、自分のサービスにAIの機能を組み込むときに使います。料金は、使った量に応じてかかることが多いです。  えーぴーあい 料金 りょうきん">
+            <h3>API(エーピーアイ)</h3>
+            <p class="one">ほかのアプリがAIを使うための「入り口」です。</p>
+            <p>会社やアプリの作り手が、自分のサービスにAIの機能を組み込むときに使います。料金は、使った量に応じてかかることが多いです。</p>
+          </article>
+        </section>
+        <section class="g-group">
+          <h2>仕組みの言葉</h2>
+          <article class="term" data-search="学習(がくしゅう) AIが大量のデータを読んで、力をつけることです。 AIを作る段階の話です。たくさんの文章や画像を読み込んで、パターンを覚えます。  がくしゅう データ 勉強">
+            <h3>学習(がくしゅう)</h3>
+            <p class="one">AIが大量のデータを読んで、力をつけることです。</p>
+            <p>AIを作る段階の話です。たくさんの文章や画像を読み込んで、パターンを覚えます。</p>
+          </article>
+          <article class="term" data-search="クラウド インターネットの向こうにある、大きなコンピューターです。 自分のパソコンではなく、ネット上のコンピューターで仕事をする仕組みです。多くのAIはクラウドで動いています。  くらうど ネット">
+            <h3>クラウド</h3>
+            <p class="one">インターネットの向こうにある、大きなコンピューターです。</p>
+            <p>自分のパソコンではなく、ネット上のコンピューターで仕事をする仕組みです。多くのAIはクラウドで動いています。</p>
+          </article>
+          <article class="term" data-search="セキュリティ コンピューターやデータを、悪い人から守ることです。 第1回のニュースのGemini 4 Argonのように、AIがパソコンの弱点を見つける力は、守る側にも攻める側にも使えます。そのため、AIの安全の話によく出てきます。  せきゅりてぃ 安全 あんぜん 守る サイバー">
+            <h3>セキュリティ</h3>
+            <p class="one">コンピューターやデータを、悪い人から守ることです。</p>
+            <p>第1回のニュースのGemini 4 Argonのように、AIがパソコンの弱点を見つける力は、守る側にも攻める側にも使えます。そのため、AIの安全の話によく出てきます。</p>
+          </article>
+        </section>
+
+        <p id="empty" class="empty" hidden>見つかりませんでした。ひらがなやカタカナを変えて、もう一度探してみてください。</p>
+
+        <p class="note">AIの言葉の意味は、使う人や場面で少しずつ違うことがあります。ここでは、初心者向けに「だいたいこういう意味」という説明にしています。</p>
+        <a class="back" href="../">← トップページへ戻る</a>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap">© nhirolab AI実験室</div>
+    </footer>
+
+    <script>
+      (function () {
+        var input = document.getElementById('q');
+        var terms = Array.prototype.slice.call(document.querySelectorAll('.term'));
+        var groups = Array.prototype.slice.call(document.querySelectorAll('.g-group'));
+        var empty = document.getElementById('empty');
+        var count = document.getElementById('count');
+        // 全角を半角に、カタカナをひらがなに、大文字を小文字にそろえる
+        function norm(s) {
+          return s.toLowerCase()
+            .replace(/[\uff01-\uff5e]/g, function (c) { return String.fromCharCode(c.charCodeAt(0) - 0xfee0); })
+            .replace(/[\u30a1-\u30f6]/g, function (c) { return String.fromCharCode(c.charCodeAt(0) - 0x60); });
+        }
+        var index = terms.map(function (t) { return norm(t.getAttribute('data-search')); });
+        function run() {
+          var words = norm(input.value).split(/\s+/).filter(Boolean);
+          var shown = 0;
+          terms.forEach(function (t, i) {
+            var ok = words.every(function (w) { return index[i].indexOf(w) !== -1; });
+            t.hidden = !ok;
+            if (ok) shown++;
+          });
+          groups.forEach(function (g) {
+            g.hidden = !g.querySelector('.term:not([hidden])');
+          });
+          empty.hidden = shown !== 0;
+          count.textContent = words.length && shown ? shown + '件 見つかりました' : '';
+        }
+        input.addEventListener('input', run);
+      })();
+    </script>
+  </body>
+</html>

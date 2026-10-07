@@ -237,3 +237,18 @@ a:hover { color: var(--accent-hover); }
 .tips p, .tips li { font-size: 15px; }
 .tips ul { margin: 8px 0 0; }
 .back { display: inline-block; margin-top: 40px; }
+
+/* 用語集 */
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.search { position: sticky; top: 52px; z-index: 5; margin: 0 -24px 24px; padding: 12px 24px; background: color-mix(in srgb, var(--bg) 90%, transparent); -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px); }
+.search input { width: 100%; padding: 14px 20px; border: 1px solid var(--line); border-radius: 980px; background: var(--bg-soft); color: var(--text); font: inherit; font-size: 17px; outline: none; }
+.search input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 25%, transparent); }
+.count { margin: 8px 20px 0; min-height: 1.4em; color: var(--text-sub); font-size: 14px; }
+.g-group[hidden], .term[hidden], .empty[hidden] { display: none; }
+.term { margin: 16px 0; padding: 24px; border-radius: var(--radius); background: var(--bg-soft); }
+.term h3 { margin: 0 0 8px; font-size: 22px; }
+.term .one { font-weight: 600; }
+.term p { margin: 8px 0 0; font-size: 17px; }
+.term .simply { background: var(--bg); }
+.empty { padding: 40px 0; text-align: center; color: var(--text-sub); }
+.note { margin-top: 40px; color: var(--text-sub); font-size: 14px; }
