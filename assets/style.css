@@ -252,3 +252,18 @@ a:hover { color: var(--accent-hover); }
 .term .simply { background: var(--bg); }
 .empty { padding: 40px 0; text-align: center; color: var(--text-sub); }
 .note { margin-top: 40px; color: var(--text-sub); font-size: 14px; }
+
+/* このサイトについて */
+.members { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 16px; }
+.member { padding: 24px 16px; border-radius: var(--radius); background: var(--bg-soft); text-align: center; }
+.member img { display: block; width: 120px; height: 120px; margin: 0 auto 16px; border-radius: 50%; object-fit: cover; background: var(--bg); }
+.member h3 { margin: 0; font-size: 22px; }
+.member .role { margin: 4px 0 8px; color: var(--accent); font-size: 14px; font-weight: 600; }
+.member p:last-child { margin: 0; color: var(--text-sub); font-size: 15px; line-height: 1.6; }
+.footer a { color: var(--text-sub); text-decoration: underline; }
+@media (max-width: 720px) {
+  .members { grid-template-columns: 1fr; }
+  .member { display: grid; grid-template-columns: 96px 1fr; column-gap: 16px; align-items: center; text-align: left; padding: 16px; }
+  .member img { grid-row: 1 / 4; width: 96px; height: 96px; margin: 0; }
+}
+.term h3, .tips { scroll-margin-top: 140px; }
