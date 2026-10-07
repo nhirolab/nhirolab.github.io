@@ -293,3 +293,11 @@ a:hover { color: var(--accent-hover); }
 @media (max-width: 720px) { .tool { padding: 22px; } }
 .scroll-hint { display: none; margin: 8px 0 0; color: var(--text-sub); font-size: 13px; }
 @media (max-width: 720px) { .scroll-hint { display: block; } }
+
+/* トップページ: メンバー紹介 */
+.team { display: flex; justify-content: center; gap: 16px; margin-top: 8px; }
+.team img { flex: 0 1 200px; min-width: 0; width: 100%; max-width: 200px; height: auto; mix-blend-mode: multiply; transition: transform 0.3s ease; }
+.team:hover img { transform: translateY(-4px); }
+.team-link { margin: 24px 0 0; text-align: center; }
+@media (prefers-color-scheme: dark) { .team img { mix-blend-mode: normal; border-radius: 24px; } }
+@media (max-width: 720px) { .team { gap: 8px; } }
