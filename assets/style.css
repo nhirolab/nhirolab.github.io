@@ -267,3 +267,28 @@ a:hover { color: var(--accent-hover); }
   .member img { grid-row: 1 / 4; width: 96px; height: 96px; margin: 0; }
 }
 .term h3, .tips { scroll-margin-top: 140px; }
+
+/* ツール紹介 */
+.tools { display: grid; gap: 16px; margin-top: 8px; }
+.tool { padding: 28px; border-radius: var(--radius); background: var(--bg-soft); }
+.article .tool h2 { margin: 0; font-size: 28px; }
+.tool-head { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.tool .maker { margin: 0; color: var(--accent); font-size: 14px; font-weight: 600; }
+.tool .one { margin: 8px 0 16px; font-weight: 600; }
+.tool dl { margin: 0; }
+.tool dt { margin-top: 12px; color: var(--text-sub); font-size: 13px; font-weight: 600; }
+.tool dd { margin: 2px 0 0; font-size: 16px; }
+.tool .official { display: inline-block; margin-top: 20px; font-size: 15px; }
+.table-scroll { overflow-x: auto; margin-top: 16px; -webkit-overflow-scrolling: touch; }
+.compare { min-width: 520px; margin: 0; }
+.compare th, .compare td { padding: 14px 10px; vertical-align: top; }
+.compare thead th { color: var(--text); font-size: 15px; }
+.compare tbody th { color: var(--text-sub); font-size: 14px; font-weight: 600; white-space: nowrap; }
+.small { margin-top: 12px; color: var(--text-sub); font-size: 14px; }
+.article .small, .article .sources .small { font-size: 14px; }
+.steps { padding-left: 1.4em; }
+.steps li { margin: 12px 0; }
+.steps strong { display: block; }
+@media (max-width: 720px) { .tool { padding: 22px; } }
+.scroll-hint { display: none; margin: 8px 0 0; color: var(--text-sub); font-size: 13px; }
+@media (max-width: 720px) { .scroll-hint { display: block; } }
