@@ -1,4 +1,5 @@
 :root {
+  --nav-h: 52px;
   --bg: #ffffff;
   --bg-soft: #f5f5f7;
   --text: #1d1d1f;
@@ -240,7 +241,7 @@ a:hover { color: var(--accent-hover); }
 
 /* 用語集 */
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
-.search { position: sticky; top: 52px; z-index: 5; margin: 0 -24px 24px; padding: 12px 24px; background: color-mix(in srgb, var(--bg) 90%, transparent); -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px); }
+.search { position: sticky; top: var(--nav-h); z-index: 5; margin: 0 -24px 24px; padding: 12px 24px; background: color-mix(in srgb, var(--bg) 90%, transparent); -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px); }
 .search input { width: 100%; padding: 14px 20px; border: 1px solid var(--line); border-radius: 980px; background: var(--bg-soft); color: var(--text); font: inherit; font-size: 17px; outline: none; }
 .search input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 25%, transparent); }
 .count { margin: 8px 20px 0; min-height: 1.4em; color: var(--text-sub); font-size: 14px; }
@@ -267,7 +268,7 @@ a:hover { color: var(--accent-hover); }
   .member { display: grid; grid-template-columns: 128px 1fr; column-gap: 16px; align-items: center; text-align: left; padding: 16px; }
   .member img { grid-row: 1 / 4; width: 128px; margin: 0; }
 }
-.term h3, .tips { scroll-margin-top: 140px; }
+.term h3, .tips { scroll-margin-top: calc(var(--nav-h) + 88px); }
 
 /* ツール紹介 */
 .tools { display: grid; gap: 16px; margin-top: 8px; }
@@ -301,3 +302,29 @@ a:hover { color: var(--accent-hover); }
 .team-link { margin: 24px 0 0; text-align: center; }
 @media (prefers-color-scheme: dark) { .team img { mix-blend-mode: normal; border-radius: 24px; } }
 @media (max-width: 720px) { .team { gap: 8px; } }
+
+/* Kindle本 */
+.books-page { max-width: 860px; }
+.book { display: grid; grid-template-columns: 220px 1fr; gap: 32px; padding: 32px; border-radius: var(--radius); background: var(--bg-soft); margin-top: 16px; }
+.book-cover { display: block; width: 100%; height: auto; border-radius: 6px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18); }
+.book-kind { margin: 0 0 8px; color: var(--accent); font-size: 14px; font-weight: 600; }
+.article .book h2 { margin: 0; font-size: clamp(26px, 4vw, 34px); }
+.book-sub { margin: 4px 0 0; color: var(--text-sub); font-size: 18px; }
+.book-author { margin: 8px 0 20px; color: var(--text-sub); font-size: 15px; }
+.book-lead { margin: 0 0 8px; font-size: 19px; font-weight: 600; }
+.book-spec { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 24px; margin: 24px 0; }
+.book-spec div { padding-top: 8px; border-top: 1px solid var(--line); }
+.book-spec dt { color: var(--text-sub); font-size: 13px; font-weight: 600; }
+.book-spec dd { margin: 2px 0 0; font-size: 17px; }
+.book .btn { margin-top: 4px; }
+@media (max-width: 720px) {
+  .book { grid-template-columns: 1fr; padding: 24px; }
+  .book-cover { max-width: 200px; margin: 0 auto; }
+}
+
+/* スマホ: ナビを2行にする(ロゴの下にメニューを横一列) */
+@media (max-width: 560px) {
+  :root { --nav-h: 67px; }
+  .nav .wrap { height: auto; flex-wrap: wrap; padding-top: 10px; padding-bottom: 8px; row-gap: 0; }
+  .nav ul { width: 100%; justify-content: space-between; gap: 8px; }
+}
