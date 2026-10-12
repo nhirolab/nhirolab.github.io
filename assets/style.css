@@ -339,3 +339,7 @@ a:hover { color: var(--accent-hover); }
 .book-card h3 { margin: 0 0 6px; }
 .card-cover { flex: none; width: 88px; height: auto; border-radius: 4px; box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18); }
 @media (max-width: 720px) { .card-cover { width: 76px; } }
+.book .simply { background: var(--bg); font-size: 16px; }
+.book-for-title { margin: 20px 0 4px; color: var(--text-sub); font-size: 13px; font-weight: 600; }
+.book-for { margin: 0; padding-left: 1.3em; font-size: 16px; }
+.book-for li { margin: 4px 0; font-size: 16px; }
