@@ -328,3 +328,11 @@ a:hover { color: var(--accent-hover); }
   .nav .wrap { height: auto; flex-wrap: wrap; padding-top: 10px; padding-bottom: 8px; row-gap: 0; }
   .nav ul { width: 100%; justify-content: space-between; gap: 8px; }
 }
+
+/* Kindle本: 2冊目・表紙の準備中・トップページの枠 */
+.book + .book { margin-top: 24px; }
+.book { scroll-margin-top: calc(var(--nav-h) + 16px); }
+.book-cover-placeholder { display: flex; align-items: center; justify-content: center; aspect-ratio: 5 / 7; padding: 16px; text-align: center; background: color-mix(in srgb, var(--text-sub) 14%, transparent); color: var(--text-sub); font-size: 14px; box-shadow: none; }
+.book-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.book-cards .card p + p { margin-top: 4px; }
+@media (max-width: 720px) { .book-cards { grid-template-columns: 1fr; } }
