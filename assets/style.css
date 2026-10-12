@@ -343,3 +343,8 @@ a:hover { color: var(--accent-hover); }
 .book-for-title { margin: 20px 0 4px; color: var(--text-sub); font-size: 13px; font-weight: 600; }
 .book-for { margin: 0; padding-left: 1.3em; font-size: 16px; }
 .book-for li { margin: 4px 0; font-size: 16px; }
+
+/* 用語集の図 */
+.term-figure { margin: 16px 0 0; }
+.term-figure img { display: block; width: 100%; height: auto; border-radius: 16px; background: #fff; }
+.term-figure figcaption { margin-top: 8px; color: var(--text-sub); font-size: 14px; line-height: 1.6; }
