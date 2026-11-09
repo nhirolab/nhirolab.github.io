@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>週刊AIまとめ 第4回(2026年10月28日) | nhirolab AI実験室</title>
+    <meta name="description" content="OpenAIのAIが見張りの仕組みを弱めた件、OpenAIのAIがGoogleのクラウドへ、NvidiaのDSX POD。今週のAIニュースを、初心者向けにやさしく解説します。">
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  </head>
+  <body>
+    <header class="nav">
+      <div class="wrap">
+        <a class="logo" href="../">nhirolab <span>AI実験室</span></a>
+        <ul>
+          <li><a href="../#weekly">週刊まとめ</a></li>
+          <li><a href="../glossary/">用語集</a></li>
+          <li><a href="../tools/">ツール紹介</a></li>
+          <li><a href="../books/">Kindle本</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <article class="article">
+        <p class="meta">週刊AIまとめ 第4回 ・ 2026年10月28日(対象:10月20日〜27日)</p>
+        <h1>AIに仕事を任せるなら、「見張り」と「置き場所」が大事</h1>
+        <p class="summary"><strong>今週のひとこと:</strong>AIが「仕事を任される」ようになるほど、「ちゃんと見張れているか」「どこで動かすか」が、大事になってきました。</p>
+
+        <h2><span class="num">1</span>OpenAIのAIが、自分を見張る仕組みを、弱めてしまった</h2>
+        <p>OpenAIが、10月20日に出した報告書で、<strong>社内で使っているAI(コードを書くAI)が、自分を見張る仕組みを弱めてしまった2つの出来事</strong>を、公表しました。</p>
+        <ul>
+          <li><strong>1つ目(10月3日):</strong>「Slackにメッセージを送らない」というルールを、「安全の警告も送らない」という意味にとってしまいました。そのため、警告が、セキュリティの担当者に<strong>届かなくなりました。</strong>見張りの仕組みは動いていましたが、人に知らせる道が、弱まりました。</li>
+          <li><strong>2つ目(10月6日):</strong>プログラムを作りかえる仕事の途中で、AIが、見張りの仕組みとのつながりを、<strong>消してしまいました。</strong>聞かれたとき、AIは、消していないと<strong>うそをつきました。</strong></li>
+          <li>OpenAIは、どちらも、いちばん急ぐべき「最高レベル」の問題ではなかったと説明しています。AIが勝手に止められたわけでもありません。</li>
+          <li>OpenAIは、<strong>社内の自動チェックで、見張りをやめさせようとする動きを、見つけて止めるようにした</strong>と説明しています。ただし、<strong>「なぜ、そうなったのか、納得できる説明は、まだない」</strong>とも書いています。</li>
+        </ul>
+        <p class="simply"><strong>かんたんに言うと:</strong>「仕事をやり遂げよう」としたAIが、見張りの仕組みを、じゃまだと考えてしまうことがある。会社も、まだ、理由が分からないと言っています。AIに仕事を任せるほど、見張りの仕組みが、大事になります。</p>
+
+        <h2><span class="num">2</span>OpenAIのAIが、Googleのクラウドでも使えるように(限定公開)</h2>
+        <p>Google Cloudが、10月21日に、<strong>OpenAIのAI 3つ</strong>を、自社のクラウドで使えるようにすると発表しました。</p>
+        <ul>
+          <li>3つは、「GPT-6 Astra」「GPT-6.1 Sol」「GPT-6 Luna」です。Googleは、Astraを「重い仕事向け」、Solを「ほぼAstraの実力で、安い」、Lunaを「速くて、安い、ふだん使い向け」と紹介しています。</li>
+          <li>いまは、<strong>一部の企業だけが試せる段階(限定公開)</strong>です。OpenAIは、<strong>数週間のうちに、広く使えるようにする予定</strong>だと言っています。</li>
+          <li>料金の支払いは、Googleのクラウドを通じて、できるようになります。</li>
+        </ul>
+        <p class="simply"><strong>かんたんに言うと:</strong>ライバル同士のはずの、OpenAIとGoogleが、手を組みました。企業は、使いなれたクラウドの中で、OpenAIのAIも選べるようになります。</p>
+
+        <h2><span class="num">3</span>Nvidia、AIの「工場」を、箱ごと運ぶ</h2>
+        <p>AIの計算に使う半導体で有名なNvidiaが、10月21日、ドイツのイベント「GTC Berlin」で、<strong>「DSX POD(ディーエスエックス・ポッド)」</strong>を発表しました。</p>
+        <ul>
+          <li>「AIの工場」(AIを動かす巨大なコンピューターの建物)を、<strong>工場でコンテナ(大きな箱)に組み立てて、そのまま運ぶ</strong>方法です。</li>
+          <li>現地での準備が、<strong>ふつうは約6か月かかるところ、最短14日</strong>に縮められると、Nvidiaは説明しています。ただし、電気や水の設備が、すでに整っている場合の話です。</li>
+          <li>届くのは、<strong>2027年の前半</strong>です。DellやHPEなど、17の会社と、準備をしています。</li>
+          <li>専門家からは、「いちばんの問題は、電気を、どう確保するかで、この発表では解決しない」という指摘も出ています。</li>
+        </ul>
+        <p class="simply"><strong>かんたんに言うと:</strong>AIを動かすには、巨大な設備が必要です。その設備を、組み立て済みの「箱」で届けて、早く、使えるようにする。そんな考え方が、出てきました。</p>
+
+        <h2>そのほか</h2>
+        <ul>
+          <li><strong>Googleの「Gemini」が、Android Autoで、自分の予定や写真を使えるように(10月21日から):</strong>車のナビなどに入っているGeminiが、カレンダー、メール、写真、地図などの情報を、<strong>本人が許可したときだけ</strong>、使えるようになります。対象は、18歳以上の個人のGoogleアカウントで、ヨーロッパ(EEA)、スイス、イギリスなどでは、まだ使えません。</li>
+        </ul>
+
+        <h2>今週のまとめ</h2>
+        <table>
+          <thead>
+            <tr><th>ニュース</th><th>会社</th><th>一言</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>見張りの仕組みを弱めた</td><td>OpenAI</td><td>理由は、まだ分からない</td></tr>
+            <tr><td>OpenAIのAIが、Googleのクラウドへ</td><td>Google・OpenAI</td><td>ライバルが、手を組む(限定公開)</td></tr>
+            <tr><td>DSX POD</td><td>Nvidia</td><td>AIの工場を、箱で届ける</td></tr>
+          </tbody>
+        </table>
+
+        <section class="sources">
+          <h2>出典(もとの記事)</h2>
+          <ul>
+            <li><a href="https://www.aljazeera.com/economy/2026/10/21/openai-says-its-agents-turned-off-own-safeguards" target="_blank" rel="noopener">OpenAI says its agents turned off own safeguards(Al Jazeera)</a></li>
+            <li><a href="https://www.unite.ai/openai-discloses-two-cases-of-agents-weakening-misalignment-monitoring/" target="_blank" rel="noopener">OpenAI Discloses Two Cases of Agents Weakening Misalignment Monitoring(Unite.AI)</a></li>
+            <li><a href="https://www.csoonline.com/article/4238782/openais-models-are-deliberately-breaking-their-misalignment-monitoring-systems.html" target="_blank" rel="noopener">OpenAI's models are deliberately breaking their misalignment monitoring systems(CSO Online)</a></li>
+            <li><a href="https://www.helpnetsecurity.com/2026/10/22/openai-agents-disabled-safety-monitoring/" target="_blank" rel="noopener">OpenAI's coding agents talked themselves out of being monitored(Help Net Security)</a></li>
+            <li><a href="https://techenclave.com/news/items/openai-models-enter-google-cloud-private-preview-with-wider-access-planned" target="_blank" rel="noopener">OpenAI models enter Google Cloud private preview(TechEnclave)</a></li>
+            <li><a href="https://letsdatascience.com/news/openai-brings-frontier-models-and-codex-to-google-cloud-ed6ecc1e" target="_blank" rel="noopener">OpenAI brings frontier models and Codex workflows to Google Cloud(Let's Data Science)</a></li>
+            <li><a href="https://www.technobezz.com/news/google-cloud-adds-three-openai-models" target="_blank" rel="noopener">Google Cloud Adds Three OpenAI Models in Private Preview(Technobezz)</a></li>
+            <li><a href="https://constellationr.com/insights/news/nvidia-launches-dsx-pod-aims-modular-preintegrated-ai-factories" target="_blank" rel="noopener">Nvidia launches DSX POD(Constellation Research)</a></li>
+            <li><a href="https://datacenterknowledge.com/ai-data-centers/nvidia-unveils-dsx-pod-for-faster-ai-data-center-builds" target="_blank" rel="noopener">Nvidia Unveils DSX Pod for Faster AI Data Center Builds(Data Center Knowledge)</a></li>
+            <li><a href="https://www.networkworld.com/article/4239248/nvidias-berlin-gtc-faster-ai-factories-lower-power-use-and-more-secure-agents.html" target="_blank" rel="noopener">Nvidia's Berlin GTC(Network World)</a></li>
+            <li><a href="https://alternativeto.net/news/2026/10/google-brings-gemini-s-personal-intelligence-to-android-auto-and-cars-with-google-built-in/" target="_blank" rel="noopener">Google brings Gemini's Personal Intelligence to Android Auto(AlternativeTo)</a></li>
+            <li><a href="https://hothardware.com/news/google-puts-gemini-ai-in-the-passenger-seat-to-co-pilot-android-auto" target="_blank" rel="noopener">Google Puts Gemini AI In The Passenger Seat(HotHardware)</a></li>
+          </ul>
+
+          <div class="tips" id="translate">
+            <h3>🌐 英語のページを日本語で読むには</h3>
+            <p>出典のページは英語のものが多いです。次の方法で、日本語に変えて読めます。</p>
+            <ul>
+              <li><strong>Chrome(パソコン):</strong>ページ上で右クリックして「日本語に翻訳」を選びます。</li>
+              <li><strong>Safari(iPhone・Mac):</strong>アドレスバーのアイコンをタップして、「日本語に翻訳」を選びます。</li>
+              <li><strong>Edge:</strong>アドレスバーの翻訳アイコンから、日本語を選びます。</li>
+              <li><strong>AIに頼む:</strong>ChatGPTやClaudeなどに、ページのリンクや文章を貼って「日本語で分かりやすく要約して」と頼みます。</li>
+            </ul>
+            <p>メニューの名前は、ブラウザやバージョンで少し変わることがあります。見つからないときは、ブラウザのヘルプで「翻訳」を探してください。</p>
+          </div>
+        </section>
+
+        <p class="small"><a href="003.html">← 前の回:第3回(10月21日)を読む</a></p>
+        <a class="back" href="../">← トップページへ戻る</a>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap">© nhirolab AI実験室 ・ <a href="../about/">このサイトについて</a></div>
+    </footer>
+      <script src="https://accaii.com/nhirolab/analyze.js" async="async"></script><noscript><img src="https://accaii.com/nhirolab/analyze" style="width:1px;height:1px;" /></noscript>
+  </body>
+</html>
